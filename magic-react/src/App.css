@@ -1,0 +1,11 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.pricipal{
+    background-color: chocolate;
+    padding: 20px;
+    color: aliceblue;
+}

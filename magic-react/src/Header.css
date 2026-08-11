@@ -1,0 +1,18 @@
+.Menu{
+    display: flex;
+    list-style-type: none;
+}
+.Menu li{
+    text-decoration: none;
+    color: chocolate;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: chocolate;
+    background-color: wheat;
+    padding: 10px;
+    border-radius: 10px;
+}
