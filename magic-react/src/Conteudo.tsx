@@ -1,0 +1,13 @@
+function Conteudo(){
+    return(
+        <>
+            <main>
+                <h1>Meu nome é Matheus Gomes</h1>
+                <h3>Sou Desenvolvedor & psicologo</h3>
+                <a href="https://github.com/Math-aMalafaia/Estudando-React">Github</a>
+            </main>
+        </>
+    )
+}
+
+export default Conteudo

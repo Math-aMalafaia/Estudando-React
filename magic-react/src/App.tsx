@@ -1,17 +1,17 @@
-function App() { 
-  let texto = "ola mundo  "
-  let caminhoimg = "src/assets/vite.svg"
+import Header from './Header'
+import Conteudo from './Conteudo'
+
+function App() {
   return (
     <>
-      <h1>Magic React</h1>
-      <button>
-        {texto}
-      </button>
-      <img src={caminhoimg} alt="" />
-      <img src="src/assets/react.svg" alt="" />
 
-      <h1>
-      </h1>
+      <Header/>
+      <Conteudo/>
+
+      <footer> 
+        <p>Feito por Matheus Gomes</p>
+      </footer> 
+    
     </>
   )
 }
