@@ -12,22 +12,23 @@ function Conteudo(){
     return(
         <>
             <main className="Pricipal">
-                <h2>Meu nome é Matheus Gomes</h2>
-                <h3>Sou Desenvolvedor & psicologo</h3>
-                <a href="https://github.com/Math-aMalafaia/Estudando-React">Github</a>
-
-                
-                
-                <button className="SaibaMais" onClick={ClickButton}>
-                    Saiba mais
-                </button>
-                
-                <div className="Card-SaibaMais">
-                    <p>
-                        {Saiba}
-                    </p>
-                </div>
-                
+                <section className="pricipal-text">
+                    
+                    <h2 className="Pricipal-intro">Meu nome é Matheus Gomes</h2>
+                    <h3>Sou Desenvolvedor & psicologo</h3>
+                    
+                    
+                    <button className="SaibaMais" onClick={ClickButton}>
+                        Saiba mais
+                    </button>
+                    
+                    <div className="Card-SaibaMais">
+                        <p>
+                            {Saiba}
+                        </p>
+                    </div>
+                </section>
+                <img className="Pict" src="src/assets/programmer.png" alt="" />
             </main>
         </>
     )

@@ -6,6 +6,7 @@
     background-color: yellow;
     color: purple;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100px;
 }
 
 .Card-SaibaMais{
@@ -14,8 +15,23 @@
 
 .Pricipal{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 30px;
+}
+
+.Pict {
+    height: auto;
+    width: 350px;
+}
+
+.pricipal-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Pricipal-intro{
+    font-size: 35px;
 }

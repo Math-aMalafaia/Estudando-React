@@ -1,8 +1,9 @@
 .Menu{
     display: flex;
     list-style-type: none;
+    gap: 10px;
 }
-.Menu li{
+.Menu a{
     text-decoration: none;
     color: chocolate;
 }

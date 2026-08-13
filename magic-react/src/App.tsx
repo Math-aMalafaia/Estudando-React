@@ -10,7 +10,7 @@ function App() {
       <Header/>
       <Conteudo/>
 
-      <footer> 
+      <footer className='Footer'> 
         <p>Feito por Matheus Gomes</p>
       </footer> 
     </div>
