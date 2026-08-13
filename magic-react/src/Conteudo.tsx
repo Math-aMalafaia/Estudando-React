@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 function Conteudo(){
 
     function ClickButton(){
@@ -7,8 +9,13 @@ function Conteudo(){
     const ClickButton2 = () => {
         alert("Parabéns você clicou no segundo Botão")
     }
-
-    let Nome = "Sem nada"
+    const [Nome, setNome] = useState("Sem nada")
+    const [Valor, setValor] = useState(0)
+    
+    function ClickButton3(){
+        setNome("Parabéns você clicou no quarto botão")
+        setValor(Valor + 1)
+    }
     return(
         <>
             <main>
@@ -34,11 +41,7 @@ function Conteudo(){
                     Clique para mostrar Matheus Gomes
                 </button>
 
-                <button onClick={
-                    () => {
-                        Nome = "Parabéns você clicou no quarto botão"
-                    }
-                }>
+                <button onClick={ClickButton3}>
                     Clique para mostra Matheus Gomes
                 </button>
 
@@ -53,6 +56,9 @@ function Conteudo(){
                 <p>
                     {Nome}
                 </p>
+                <h2>
+                    {Valor}
+                </h2>
             </main>
         </>
     )
