@@ -1,0 +1,21 @@
+.SaibaMais{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: yellow;
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Card-SaibaMais{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Pricipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
