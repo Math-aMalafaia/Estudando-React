@@ -1,5 +1,6 @@
-import Header from './Header'
-import Conteudo from './Conteudo'
+import Header from './components/Header/Header'
+import Conteudo from './components/Conteudo/Conteudo'
+import Project from './components/Project/Project'
 import './App.css'
 
 function App() {
@@ -8,8 +9,8 @@ function App() {
       <div className="pricipal">
         
       <Header/>
-      <Conteudo/>
-
+      <Conteudo />
+      <Project />
       <footer className='Footer'> 
         <p>Feito por Matheus Gomes</p>
       </footer> 

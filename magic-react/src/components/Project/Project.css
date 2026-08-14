@@ -1,0 +1,34 @@
+.Project{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Project-list{
+    list-style: none;
+
+}
+
+.Project-list img{
+    width: 85%;
+    border-radius: 10px;
+}
+
+.Project-list a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    margin: 10px;
+    border: 1px solid aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.Project-list li{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
