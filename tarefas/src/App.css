@@ -32,6 +32,8 @@ header{
 .Conteiner {
   display: flex;
   flex-direction: row;
+  height: 100%;
+
 }
 
 .btn{
@@ -39,6 +41,13 @@ header{
   background: transparent;
   width: 100%;
   cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  white-space: nowrap;
+  padding: 15px;
+  gap: 5px;
 }
 .Conteudo{
   width: 100vw;
@@ -47,6 +56,10 @@ header{
 .Tarefas{
   background-color: var(--cor-secundaria);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .Form{
@@ -68,5 +81,43 @@ header{
 }
 
 input{
-  color: var(--cor-principal);
+  border-radius: 5px;
+  background-color: var(--cor-quaternaria);
+  border: 2px solid var(--cor-principal);
+}
+
+.List{
+  background-color: var(--cor-principal);
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+  max-height: 80%;
+  overflow-y: scroll;
+}
+
+.listCheck{
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.listCheck:hover{
+  background-color: var(--cor-terciaria);
+}
+
+.listAction{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.listText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

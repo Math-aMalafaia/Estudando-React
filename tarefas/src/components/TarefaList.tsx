@@ -1,14 +1,26 @@
+import { Delete, RadioButtonChecked, Star } from '@mui/icons-material';
 import '../App.css'
-import Tarefas from './Tarefas';
+
 
 function TarefaList(){
     let list = ["FAzer tarefas", "Estudas proramação", "Estudar"]
     return(
         <>
-            <ul>
+            <ul className='List'>
                 {
                     list.map((listTask) => {
-                        return <li> {listTask} </li>
+                        return(
+                            <li className='listCheck'>
+                                <section className='listText'>
+                                    <RadioButtonChecked></RadioButtonChecked>
+                                    <span> {listTask} </span>
+                                </section>
+                                <section className='listAction'>
+                                    <div><Star></Star></div>
+                                    <div><Delete></Delete></div>
+                                </section>
+                            </li>
+                        ) 
                     })
                 }
             </ul>
