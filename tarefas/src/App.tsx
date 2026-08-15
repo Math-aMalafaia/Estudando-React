@@ -1,6 +1,7 @@
 import './App.css'
 import Sidebar from './components/Sidevar'
 import Tarefas from './components/Tarefas'
+import { CheckCircle } from '@mui/icons-material'
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
     <header>
       <h1>Tarefas App</h1>
+      <CheckCircle></CheckCircle>
     </header>
     <div className='Conteiner'>
       <Sidebar/>
