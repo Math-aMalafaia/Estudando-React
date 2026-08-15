@@ -3,7 +3,10 @@ import '../App.css'
 
 
 function TarefaList(){
-    let list = ["FAzer tarefas", "Estudas proramação", "Estudar"]
+    const list = ["FAzer tarefas", "Estudas proramação", "Estudar", "Encontra victoria"]
+    
+    let teste = localStorage.getItem('task')
+    //alert(teste)
     return(
         <>
             <ul className='List'>
