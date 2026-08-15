@@ -48,3 +48,25 @@ header{
   background-color: var(--cor-secundaria);
   height: 100%;
 }
+
+.Form{
+  display: flex;
+  gap: 10px;
+
+}
+
+.btn-Form{
+  background-color: var(--cor-principal);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-Form:hover{
+  scale: calc(1.1);
+}
+
+input{
+  color: var(--cor-principal);
+}
