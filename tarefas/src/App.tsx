@@ -1,5 +1,7 @@
 import './App.css'
 import Sidebar from './components/Sidevar'
+import Tarefas from './components/Tarefas'
+
 
 function App() {
   return (
@@ -7,8 +9,11 @@ function App() {
     <header>
       <h1>Tarefas App</h1>
     </header>
-    <div>
+    <div className='Conteiner'>
       <Sidebar/>
+      <section className='Conteudo'>
+        <Tarefas/>
+      </section>
     </div>
     </>
   )

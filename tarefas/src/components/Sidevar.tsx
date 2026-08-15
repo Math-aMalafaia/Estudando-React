@@ -1,8 +1,13 @@
+import '../App.css'
 
 function Sidebar(){
     return(
         <>
-            <h1>Sidebar funcionado</h1>
+            <nav className="Nav">
+                <button className='btn'>Todos</button>
+                <button className='btn'>Completas</button>
+                <button className='btn'>Favoritas</button>
+            </nav>
         </>
     )
 }
