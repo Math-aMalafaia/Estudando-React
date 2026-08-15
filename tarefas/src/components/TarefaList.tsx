@@ -4,9 +4,7 @@ import '../App.css'
 
 function TarefaList(){
     const list = ["FAzer tarefas", "Estudas proramação", "Estudar", "Encontra victoria"]
-    
-    let teste = localStorage.getItem('task')
-    //alert(teste)
+    localStorage.getItem('task')
     return(
         <>
             <ul className='List'>

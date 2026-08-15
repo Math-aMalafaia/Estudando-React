@@ -5,7 +5,11 @@ function TarefaForm(){
     const [nameTack, setNameTack] = useState('')
 
     function CreatTask(){
-        localStorage.setItem("task", nameTack)
+        
+        const oldTask = JSON.parse(localStorage.getItem("task")) || []
+        const oldTaskNewTask = [...oldTask, nameTack]
+        const newTask = JSON.stringify(oldTaskNewTask)
+        localStorage.setItem("task", newTask)
     }
     return(
         <>
