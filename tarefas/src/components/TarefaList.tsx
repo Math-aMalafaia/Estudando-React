@@ -1,10 +1,14 @@
 import { Delete, RadioButtonChecked, Star } from '@mui/icons-material';
 import '../App.css'
-
+import { useState } from 'react';
+import * as serviceTask from '../service/task.service'
 
 function TarefaList(){
+    const [task, setTask] = useState([])
+
+    setTask(serviceTask.takeTask())
     const list = ["FAzer tarefas", "Estudas proramação", "Estudar", "Encontra victoria"]
-    localStorage.getItem('task')
+
     return(
         <>
             <ul className='List'>
