@@ -20,7 +20,7 @@ function TarefaList(){
                             <li className='listCheck'>
                                 <section className='listText'>
                                     <RadioButtonChecked></RadioButtonChecked>
-                                    <span> {listTask} </span>
+                                    <span> {listTask.title} </span>
                                 </section>
                                 <section className='listAction'>
                                     <div><Star></Star></div>

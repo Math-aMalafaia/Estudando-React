@@ -3,16 +3,22 @@ import '../App.css'
 import * as serviceTask from '../service/task.service'
 
 function TarefaForm(){
-    const [nameTask, setNameTask] = useState('')
+    const [task, setTask] = useState({
+        title: '',
+        ful: false,
+        favorite: false,
+        ID: ''
+    })
 
 
     return(
         <>
         <form onSubmit={
-            () => {serviceTask.addTask(nameTask)}
+            () => {serviceTask.addTask(task)}
         } className='Form'>
             <input onChange={
-                (evento) => {setNameTask(evento.target.value)}
+                // esse comando muda apenas o title da task
+                (evento) => {setTask({...task, title: evento.target.value})}
             } placeholder='Adicionar tarefa'/>
             <button className='btn-Form'> Adiciona tarefa </button>
         </form>
