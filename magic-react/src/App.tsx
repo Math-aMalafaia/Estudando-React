@@ -18,7 +18,11 @@ function App() {
       <Conteudo />
       <Project project={project}/>
       <footer className='Footer'> 
-        <p>Feito por Matheus Gomes</p>
+        <div>
+          <h4> Contato </h4>
+          <p>mayh.amalafaia@gmail.com</p>
+          <p>(81)989947682</p>
+        </div>
       </footer> 
     </div>
     </>
