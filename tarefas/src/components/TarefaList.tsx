@@ -1,4 +1,4 @@
-import { Delete, RadioButtonChecked, Star } from '@mui/icons-material';
+import { Delete, RadioButtonChecked, RadioButtonUnchecked, Star, StarBorder } from '@mui/icons-material';
 import '../App.css'
 import { useEffect, useState } from 'react';
 import * as serviceTask from '../service/task.service'
@@ -18,12 +18,32 @@ function TarefaList(){
                     task.map((listTask) => {
                         return(
                             <li className='listCheck'>
-                                <section className='listText'>
-                                    <RadioButtonChecked></RadioButtonChecked>
+                                <section onClick={
+                                    () => {
+                                        serviceTask.reverseFull(listTask.id, setTask)
+                                    }
+                                } className='listText'>
+                                    {
+                                        listTask.full == true ?
+                                            <RadioButtonChecked></RadioButtonChecked>
+                                            :
+                                            <RadioButtonUnchecked></RadioButtonUnchecked>
+                                    }
                                     <span> {listTask.title} </span>
                                 </section>
                                 <section className='listAction'>
-                                    <div><Star></Star></div>
+                                    <div onClick={
+                                        () => {
+                                            serviceTask.ReverseStar(listTask.id, setTask)
+                                        }
+                                    }>
+                                        {
+                                            listTask.star == true ?
+                                            <Star></Star>
+                                            :
+                                            <StarBorder></StarBorder>
+                                        }
+                                    </div>
                                     <div><Delete></Delete></div>
                                 </section>
                             </li>

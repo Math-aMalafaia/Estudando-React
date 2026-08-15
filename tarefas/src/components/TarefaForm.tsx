@@ -5,9 +5,9 @@ import * as serviceTask from '../service/task.service'
 function TarefaForm(){
     const [task, setTask] = useState({
         title: '',
-        ful: false,
+        full: false,
         favorite: false,
-        ID: ''
+        id: crypto.randomUUID()
     })
 
 
