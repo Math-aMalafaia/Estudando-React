@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Sidebar from './components/Sidevar'
 import Tarefas from './components/Tarefas'
@@ -17,8 +18,13 @@ function App() {
     <div className='Conteiner'>
       <Sidebar/>
       <section className='Conteudo'>
-        <Tarefas/>
+        <Routes>
+          <Route path='/' element={<Tarefas/>}> </Route>
+          <Route path='/completas' element={<Tarefas/>}> </Route>
+          <Route path='/favoritas' element={<Tarefas/>}> </Route>
+        </Routes>
       </section>
+      
     </div>
     </>
   )

@@ -49,6 +49,11 @@ header{
   padding: 15px;
   gap: 5px;
 }
+
+.btn:hover{
+  background-color: var(--cor-terciaria);
+}
+
 .Conteudo{
   width: 100vw;
 }
@@ -120,4 +125,14 @@ input{
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.link-btn{
+  width: 100%;
+  text-decoration: none;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
 }
