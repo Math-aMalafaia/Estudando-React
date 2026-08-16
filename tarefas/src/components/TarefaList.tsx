@@ -44,7 +44,13 @@ function TarefaList(){
                                             <StarBorder></StarBorder>
                                         }
                                     </div>
-                                    <div><Delete></Delete></div>
+                                    <div onClick={
+                                        () => {
+                                            serviceTask.deleteTask(listTask.id, setTask)
+                                        }
+                                    }>
+                                        <Delete></Delete>
+                                    </div>
                                 </section>
                             </li>
                         ) 

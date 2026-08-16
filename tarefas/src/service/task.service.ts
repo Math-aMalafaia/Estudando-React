@@ -44,3 +44,16 @@ export function ReverseStar(id, setTask){
         const taskUpdated = JSON.stringify(taskStarReverse)
         localStorage.setItem("task", taskUpdated)
 }
+
+export function deleteTask(id, setTask){
+        const oldTask = takeTask();
+        const taskDelete = oldTask.filter(
+                (taskNow) => {
+                        const condicion = (taskNow.id != id)
+                        return condicion;
+                }
+        )
+        setTask(taskDelete);
+        const taskUpdated = JSON.stringify(taskDelete)
+        localStorage.setItem("task", taskUpdated)
+}
